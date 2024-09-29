@@ -9,7 +9,9 @@ using namespace std;
 
 int main () {
 
+    // integer: positive and negative
     int myInt = 0;
+    // unsigned integer: only positive
     uint myUInt = 0;
 
     cout << myInt << endl;
@@ -17,7 +19,10 @@ int main () {
     cout << --myInt << endl;
     cout << --myUInt << endl;
 
+    // sizeof() returns the number of bytes of the type
     cout << sizeof(int) << endl;
+
+    // constants with MAX of int/uint with 32 bit
     cout << INT32_MAX << endl;
     cout << UINT32_MAX << endl;
 
@@ -25,6 +30,7 @@ int main () {
     cout << myInt << endl;
     cout << ++myInt << endl;
 
+    // bit type, the number is the number of bits 
     bitset<32> b1(myInt);
     bitset<8> b2(0xA);
     bitset<4> b3(string("11110"));
@@ -38,6 +44,7 @@ int main () {
     cout << --myInt16 << endl;
     cout << --myUInt16 << endl;
 
+    // for real number
     float f = 12.5;
     double d = 14.12;
     long double ld = 3.1415123412341234;
