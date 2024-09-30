@@ -19,13 +19,14 @@ int main () {
     cout << --myInt << endl;
     cout << --myUInt << endl;
 
-    // sizeof() returns the number of bytes of the type
+    // sizeof() returns the number of bytes of the type/variable
     cout << sizeof(int) << endl;
 
-    // constants with MAX of int/uint with 32 bit
+    // MAX of int/uint with 32 bit
     cout << INT32_MAX << endl;
     cout << UINT32_MAX << endl;
 
+    // overflow
     myInt = INT32_MAX;
     cout << myInt << endl;
     cout << ++myInt << endl;
@@ -39,6 +40,7 @@ int main () {
     cout << b2.to_string() << endl;
     cout << b3.to_string() << endl;
 
+    // overflow
     int16_t myInt16 = 0;
     uint16_t myUInt16 = 0;
     cout << --myInt16 << endl;
@@ -49,6 +51,7 @@ int main () {
     double d = 14.12;
     long double ld = 3.1415123412341234;
 
+    // setprecision() --> number of digits after the decimal point
     cout << f << endl;
     cout << d << endl;
     cout << setprecision(32);
@@ -58,13 +61,17 @@ int main () {
     cout << sizeof(d) << endl; 
     cout << sizeof(ld) << endl; 
 
+    // boolean true/false
     bool b = true;
 
+    // boolalpha prints true/false instead 0/1
     cout << b << endl;
     cout << boolalpha << b << endl;
     cout << boolalpha << !b << endl;
 
+    // string
     string str = "Stefano";
+    // single char
     char ch = 's';
 
     cout << str << endl;
@@ -73,6 +80,7 @@ int main () {
     cout << sizeof(ch) << endl;
     cout << sizeof(str) << endl;
 
+    // generic pointer
     void *ptr = &myInt;
 
     cout << ptr << endl;
@@ -82,6 +90,5 @@ int main () {
     cout << ptr << endl;
     cout << *((long double*)ptr) << endl;
 
-    
     cout << endl << endl;
 }
